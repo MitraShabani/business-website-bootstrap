@@ -1,0 +1,121 @@
+body {
+	background-color: #61122f;
+	font-family: revert;
+}
+
+/****************/
+
+#header-nav {
+	background-color: #f6b319;
+/*	border-radius: 0;*/
+/*	border: 0;*/
+}
+
+/****************/
+
+#logo-img {
+	background: url('../image/logo.jpg') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0px;
+}
+
+/****************/
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 {
+/*	restaurant name */
+font-family: fantasy;
+color: #557c3e;
+font-size: 1.5em;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 2px 2px 2px #222;
+margin-top: 0;
+margin-bottom: 0;
+line-height: .75;
+}
+
+.navbar-brand p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: .8em;
+	margin-top: 15px;
+}
+
+.navbar-brand #phone {
+	color: #61122f;
+	font-size: 4vw;    /* 1vw = 1% of viewport with */
+/*	text-align: center;*/
+}
+.navbar-brand #phone:focus {
+	color: #557c3e;
+}
+
+
+.navbar-brand p span {
+/*align with star	*/
+vertical-align: middle;
+}
+
+/****************/
+
+#nav-list a {
+	margin-top: 10px;
+	text-align: center;
+	color: #951C49;
+}
+#nav-list a:hover , button:hover {
+	color: #E7E7E7;
+}
+
+
+#phone span { 
+	font-size: 0.8em;
+}
+
+#phone div {
+	color: #557c3e;
+	/*text-align: right;
+	padding-right: 15px;*/
+}
+
+button.navbar-toggler {
+	border: 2px solid #61122f;
+}
+
+/****************/
+
+/*small devices only*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#logo-img{
+		width: 100px;
+		height: 100px;
+		margin: 5px 10px 5px 0;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.navbar-brand h1 {
+		font-size: 5vw; 
+	}
+	.navbar-brand p {
+		font-size: .6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img {
+		height: 20 px;
+	}
+}
+
+#navbarSupportedContent a {
+	font-size: 1.2em;
+}
+#navbarSupportedContent a  i {
+	font-size: 1.2em;
+}
+
