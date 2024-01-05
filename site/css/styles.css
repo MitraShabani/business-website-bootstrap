@@ -148,6 +148,66 @@ button.navbar-toggler {
 }
 
 
+/*****Menu Category Page***/
+/****************************/
+
+.category-tile {
+	position: relative;
+	border: 2px solid #3F0C1F;
+/*	overflow: hidden;*/
+width: 160px;
+height: 100px;
+margin: 0 auto 15px;
+}
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: .9em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .5;
+}
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title, #menu-categories-title + div {
+	margin-bottom: 40px;
+	color: #cccccc;
+}
+
+/*****Single Category Page***/
+/****************************/
+
+.menu-item-tile {
+	margin-bottom: 25px;
+}
+.menu-item-tile hr {
+	width: 70%;
+	margin-left:15% 
+}
+.menu-item-photo {
+	position: relative;
+}
+.menu-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	background-color: #557c4e;
+	text-align: center;
+}
+.menu-item-description {
+	padding-right: 30px;
+}
+.menu-item-details {
+	font-size: .9em;
+	font-style: italic;
+}
+
 /*******Footer*******/
 /*******************/
 
@@ -185,7 +245,7 @@ button.navbar-toggler {
 /**************/
 /**************/
 
-/**Large devices only**/
+/**XLarge devices only**/
 @media(min-width: 1200px) {
 
 /*Home Page*/
@@ -193,17 +253,22 @@ button.navbar-toggler {
 	width: 375px;
 	margin: 0 auto 15px;
 }
+
+/*Single Category Page*/
+.menu-item-photo {
+	width: 200px;
+}
 }
 
 
 
-/**Medium devices only**/
+/**Large devices only**/
 @media (min-width: 992px) and (max-width:1199px) {
 }
 
 
 
-/**Small devices only**/
+/**Medium devices only**/
 @media (min-width: 768px) and (max-width: 991px) {
 
 /*Header*/
@@ -211,13 +276,13 @@ button.navbar-toggler {
 	width: 100px;
 	height: 100px;
 	margin: 5px 10px 5px 0;
-  }
+}
 }
 
 
 
-/**Extra small devices only**/
-@media (max-width: 767px) {
+/**Small devices only**/
+@media (min-width: 576px) and (max-width: 767px) {
 
 /*Header*/
 .navbar-brand h1 {
@@ -229,7 +294,7 @@ button.navbar-toggler {
 }
 .navbar-brand p img {
 	height: 20 px;
- }
+}
 
 /*Home page*/
 #menu-tile, #activity-tile {
@@ -240,21 +305,40 @@ button.navbar-toggler {
 /*Footer*/
 .panel-footer section {
 	text-align: center;
- }
+}
 .panel-footer section hr {
 	width: 50%;
 	margin-left:25% 
- }
+}
+
 }
 
 
 
-/**Super extra small devices only**/
-@media (max-width: 479px) {
+/**Extra small devices only**/
+@media (max-width: 576px) {
 
 /*Home Page*/
 #menu-tile, #activity-tile {
 	width: 280px;
 	margin: 0 auto 15px;
 }
+
+/*Menu Category*/
+.col-xxs-12 {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+/*Single Category Page*/
+.menu-item-photo {
+	margin: 0 auto 15px;
+	width: 200px;
+
+}
+.menu-item-description {
+	text-align: center;
+	margin-top: 15px;
+}
+
 }
